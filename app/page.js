@@ -2,11 +2,22 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-3xl">CPRG 306: Web Development 2 - Assignments</h1>
-      <Link href="./week-2/" className="underline hover:text-blue-500">
-        Week 2 Assignment
-      </Link>
+    <main className="p-5">
+      <h1 className="text-3xl mb-3">
+        CPRG 306: Web Development 2 - Assignments
+      </h1>
+      <ul>
+        <li>
+          <Link href="./week-2/" className="underline hover:text-blue-500">
+            Week 2 Assignment
+          </Link>
+        </li>
+        <li>
+          <Link href="./week-3/" className="underline hover:text-blue-500">
+            Week 3 Assignment
+          </Link>
+        </li>
+      </ul>
     </main>
   );
 }
