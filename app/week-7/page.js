@@ -11,7 +11,7 @@ export default function Page() {
     setItems((prevItems) => [...prevItems, item]);
   };
 
-  return (
+  return (  
     <main className="bg-slate-900">
       <h1 className="text-3xl font-bold p-2 text-white">Shopping List</h1>
       <NewItem onAddItem={handleAddItem} />
